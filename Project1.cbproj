@@ -1,0 +1,156 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{68C81759-FE86-4A0A-83B5-3CC478021A84}</ProjectGuid>
+			<ProjectVersion>13.4</ProjectVersion>
+			<FrameworkType>VCL</FrameworkType>
+			<MainSource>Project1.cpp</MainSource>
+			<Base>True</Base>
+			<Config Condition="'$(Config)'==''">Debug</Config>
+			<Platform Condition="'$(Platform)'==''">Win32</Platform>
+			<TargetedPlatforms>1</TargetedPlatforms>
+			<AppType>Application</AppType>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+			<Base_Win32>true</Base_Win32>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+			<Cfg_1>true</Cfg_1>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+			<Cfg_2>true</Cfg_2>
+			<CfgParent>Base</CfgParent>
+			<Base>true</Base>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base)'!=''">
+			<_TCHARMapping>wchar_t</_TCHARMapping>
+			<ProjectType>CppVCLApplication</ProjectType>
+			<ILINK_LibraryPath>edit_v3\;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<PackageImports>DBXInterBaseDriver;DataSnapServer;DataSnapCommon;DbxCommonDriver;dbxcds;CustomIPTransport;dsnap;IndyCore;IPIndyImpl;bindcompfmx;dbrtl;bindcomp;inetdb;xmlrtl;ibxpress;soaprtl;bindengine;DBXInformixDriver;DBXFirebirdDriver;inet;DBXSybaseASADriver;dbexpress;fmx;IndySystem;DataSnapClient;DataSnapProviderClient;DBXOracleDriver;fmxase;inetdbxpress;rtl;DbxClientDriver;IndyProtocols;DBXMySQLDriver;fmxobj;fmxdae;DataSnapIndy10ServerTransport;$(PackageImports)</PackageImports>
+			<Multithreaded>true</Multithreaded>
+			<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;Vcl;Vcl.Imaging;Vcl.Touch;Vcl.Samples;Vcl.Shell;$(DCC_Namespace)</DCC_Namespace>
+			<AllPackageLibs>rtl.lib;vcl.lib;dbrtl.lib;vcldb.lib;dac160.lib;ibdac160.lib</AllPackageLibs>
+			<Icon_MainIcon>$(BDS)\bin\cbuilder_PROJECTICON.ico</Icon_MainIcon>
+			<UsingDelphiRTL>true</UsingDelphiRTL>
+			<IncludePath>edit_v3\;$(IncludePath)</IncludePath>
+			<DCC_CBuilderOutput>JPHNE</DCC_CBuilderOutput>
+			<DynamicRTL>true</DynamicRTL>
+			<UsePackages>true</UsePackages>
+			<IntermediateOutputDir>.\$(Platform)\$(Config)</IntermediateOutputDir>
+			<FinalOutputDir>.\$(Platform)\$(Config)</FinalOutputDir>
+			<BCC_wpar>false</BCC_wpar>
+			<BCC_OptimizeForSpeed>true</BCC_OptimizeForSpeed>
+			<BCC_ExtendedErrorInfo>true</BCC_ExtendedErrorInfo>
+			<ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\release\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Base_Win32)'!=''">
+			<PackageImports>dxTileControlRS16;cxLibraryRS16;dxSkinTheBezierRS16;ibdacfmx160;dxSkinSevenRS16;dxPsPrVwAdvRS16;dxRibbonCustomizationFormRS16;dxSkinSummer2008RS16;dxRichEditInplaceRS16;dxPSCoreRS16;dxPScxTLLnkRS16;dxPSdxSpreadSheetLnkRS16;dxPScxGridLnkRS16;cxPageControlRS16;dxSkinVS2010RS16;vclimg;dxSkinDevExpressStyleRS16;dxSkinWhiteprintRS16;dxComnRS16;vcldb;dxOfficeCoreRS16;dxADOServerModeRS16;dxSkinBlackRS16;dxBarExtDBItemsRS16;dxSkinXmas2008BlueRS16;dxSpreadSheetInplaceRichEditRS16;dxSkinOffice2007BlueRS16;dxSpreadSheetCoreRS16;CloudService;dxSkinOffice2007GreenRS16;FmxTeeUI;cxDataRS16;dxSkinMetropolisRS16;dxDockingRS16;dxPSDBTeeChartRS16;dxSpreadSheetReportDesignerRS16;dxPSLnksRS16;dxBarExtItemsRS16;dxPSdxPDFViewerLnkRS16;ibdacvcl160;dxPSTeeChartRS16;dxPSdxLCLnkRS16;cxVerticalGridRS16;dxSkinSharpRS16;dxSkinOffice2007BlackRS16;dxorgcRS16;dxSkinBlueprintRS16;dxWizardControlRS16;dxPScxExtCommonRS16;vcldbx;dxNavBarRS16;dxSpreadSheetCoreDialogsRS16;cxSchedulerTreeBrowserRS16;dxSpreadSheetCoreConditionalFormattingDialogsRS16;DBXOdbcDriver;dxdbtrRS16;dxRichEditCoreRS16;dxSkinFoggyRS16;frxDB16;intrawebdb_120_160;dxSkinDarkSideRS16;fs16;vclactnband;FMXTee;dxPScxSchedulerLnkRS16;dxServerModeRS16;bindcompvcl;dxPSdxDBTVLnkRS16;vclie;dacvcl160;dxSkinSilverRS16;dsnapcon;dxHttpIndyRequestRS16;dxSkinOffice2013WhiteRS16;dxSkinLilianRS16;vclx;dxSkinValentineRS16;dxFlowChartRS16;bcbie;dxGDIPlusRS16;dxSkinSharpPlusRS16;dxdborRS16;dxSkinVisualStudio2013LightRS16;dxPScxVGridLnkRS16;dxPSdxMapControlLnkRS16;dxLayoutControlRS16;dxSpreadSheetRS16;dxPScxPivotGridLnkRS16;dxCoreRS16;dxPDFViewerRS16;cxExportRS16;dxBarRS16;dxSkinOffice2016DarkRS16;dxSkinCoffeeRS16;cxTreeListdxBarPopupMenuRS16;TeeDB;dxDBXServerModeRS16;dxPSdxGaugeControlLnkRS16;cxSchedulerWebServiceStorageRS16;Rave100VCL;vclib;inetdbbde;dxSkinOffice2013DarkGrayRS16;dxRibbonRS16;DBXSybaseASEDriver;dxSpreadSheetConditionalFormattingDialogsRS16;cxTreeListRS16;dxSkinOffice2016ColorfulRS16;dxSkinOffice2007SilverRS16;vcldsnap;dac160;dxSkinBlueRS16;DBXDb2Driver;Intraweb_120_160;dxGaugeControlRS16;vclribbon;frxe16;dxSkinDarkRoomRS16;vcl;dxSkinDevExpressDarkStyleRS16;DBXMSSQLDriver;dxSkinVisualStudio2013BlueRS16;cxSchedulerGridRS16;dxRichEditControlCoreRS16;webdsnap;dxSkinTheAsphaltWorldRS16;dxtrmdRS16;dxSkinOffice2010BlackRS16;dxSkinMoneyTwinsRS16;dxSkinPumpkinRS16;adortl;dxRichEditControlRS16;dxSkinHighContrastRS16;dxRichEditDocumentModelRS16;dxSkinOffice2013LightGrayRS16;dxSkiniMaginaryRS16;frx16;dxSkinLondonLiquidSkyRS16;dxPSdxDBOCLnkRS16;crcontrols160;Tee;dxSkinGlassOceansRS16;dxSkinLiquidSkyRS16;ibdac160;dxSkinsCoreRS16;cxPivotGridChartRS16;dxPScxCommonRS16;dxmdsRS16;dxSpellCheckerRS16;dxMapControlRS16;cxGridRS16;dxPSPrVwRibbonRS16;cxEditorsRS16;TeeUI;cxPivotGridRS16;dxSkinSevenClassicRS16;cxSchedulerRibbonStyleEventEditorRS16;cxSchedulerRS16;dxSkinOffice2010SilverRS16;vcltouch;bcbsmp;websnap;dxSkinOffice2007PinkRS16;dxFlowChartAdvancedCustomizeFormRS16;dxSkinSpringTimeRS16;dxTabbedMDIRS16;fsDB16;dxPSRichEditControlLnkRS16;DataSnapConnectors;dxSkinVisualStudio2013DarkRS16;dxSkinStardustRS16;dxSkinMetropolisDarkRS16;dxPSdxOCLnkRS16;dxSkinOffice2010BlueRS16;dxPSdxFCLnkRS16;dxThemeRS16;dxPScxPCProdRS16;dxSkinCaramelRS16;bdertl;dxSkinMcSkinRS16;dxBarDBNavRS16;dxAuthorizationAgentsRS16;$(PackageImports)</PackageImports>
+			<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+			<IncludePath>$(BDSINCLUDE)\windows\vcl;$(IncludePath)</IncludePath>
+			<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+			<VerInfo_Locale>1033</VerInfo_Locale>
+			<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+			<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_1)'!=''">
+			<BCC_OptimizeForSpeed>false</BCC_OptimizeForSpeed>
+			<BCC_DisableOptimizations>true</BCC_DisableOptimizations>
+			<DCC_Optimize>false</DCC_Optimize>
+			<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+			<Defines>_DEBUG;$(Defines)</Defines>
+			<BCC_InlineFunctionExpansion>false</BCC_InlineFunctionExpansion>
+			<BCC_UseRegisterVariables>None</BCC_UseRegisterVariables>
+			<DCC_Define>DEBUG</DCC_Define>
+			<BCC_DebugLineNumbers>true</BCC_DebugLineNumbers>
+			<TASM_DisplaySourceLines>true</TASM_DisplaySourceLines>
+			<BCC_StackFrames>true</BCC_StackFrames>
+			<ILINK_FullDebugInfo>true</ILINK_FullDebugInfo>
+			<TASM_Debugging>Full</TASM_Debugging>
+			<BCC_SourceDebuggingOn>true</BCC_SourceDebuggingOn>
+			<ILINK_LibraryPath>$(BDSLIB)\$(PLATFORM)\debug;$(ILINK_LibraryPath)</ILINK_LibraryPath>
+			<ILINK_TranslatedLibraryPath>$(BDSLIB)\$(PLATFORM)\debug\$(LANGDIR);$(ILINK_TranslatedLibraryPath)</ILINK_TranslatedLibraryPath>
+		</PropertyGroup>
+		<PropertyGroup Condition="'$(Cfg_2)'!=''">
+			<Defines>NDEBUG;$(Defines)</Defines>
+			<TASM_Debugging>None</TASM_Debugging>
+		</PropertyGroup>
+		<ItemGroup>
+			<CppCompile Include="Project1.cpp">
+				<BuildOrder>0</BuildOrder>
+			</CppCompile>
+			<CppCompile Include="Unit1.cpp">
+				<Form>Form1</Form>
+				<FormType>dfm</FormType>
+				<DependentOn>Unit1.h</DependentOn>
+				<BuildOrder>1</BuildOrder>
+			</CppCompile>
+			<FormResources Include="Unit1.dfm"/>
+			<BuildConfiguration Include="Release">
+				<Key>Cfg_2</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Base">
+				<Key>Base</Key>
+			</BuildConfiguration>
+			<BuildConfiguration Include="Debug">
+				<Key>Cfg_1</Key>
+				<CfgParent>Base</CfgParent>
+			</BuildConfiguration>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>CPlusPlusBuilder.Personality.12</Borland.Personality>
+			<Borland.ProjectType>CppVCLApplication</Borland.ProjectType>
+			<BorlandProject>
+				<CPlusPlusBuilder.Personality>
+					<Source>
+						<Source Name="MainSource">Project1.cpp</Source>
+					</Source>
+					<VersionInfo>
+						<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+						<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+						<VersionInfo Name="MajorVer">1</VersionInfo>
+						<VersionInfo Name="MinorVer">0</VersionInfo>
+						<VersionInfo Name="Release">0</VersionInfo>
+						<VersionInfo Name="Build">0</VersionInfo>
+						<VersionInfo Name="Debug">False</VersionInfo>
+						<VersionInfo Name="PreRelease">False</VersionInfo>
+						<VersionInfo Name="Special">False</VersionInfo>
+						<VersionInfo Name="Private">False</VersionInfo>
+						<VersionInfo Name="DLL">False</VersionInfo>
+						<VersionInfo Name="Locale">1045</VersionInfo>
+						<VersionInfo Name="CodePage">1250</VersionInfo>
+					</VersionInfo>
+					<VersionInfoKeys>
+						<VersionInfoKeys Name="CompanyName"/>
+						<VersionInfoKeys Name="FileDescription"/>
+						<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="InternalName"/>
+						<VersionInfoKeys Name="LegalCopyright"/>
+						<VersionInfoKeys Name="LegalTrademarks"/>
+						<VersionInfoKeys Name="OriginalFilename"/>
+						<VersionInfoKeys Name="ProductName"/>
+						<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+						<VersionInfoKeys Name="Comments"/>
+					</VersionInfoKeys>
+					<ProjectProperties>
+						<ProjectProperties Name="AutoShowDeps">False</ProjectProperties>
+						<ProjectProperties Name="ManagePaths">True</ProjectProperties>
+						<ProjectProperties Name="VerifyPackages">True</ProjectProperties>
+					</ProjectProperties>
+				</CPlusPlusBuilder.Personality>
+				<Deployment/>
+				<Platforms>
+					<Platform value="Win32">True</Platform>
+				</Platforms>
+			</BorlandProject>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Cpp.Targets')" Project="$(BDS)\Bin\CodeGear.Cpp.Targets"/>
+		<Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
+	</Project>
